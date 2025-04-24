@@ -1,1 +1,1 @@
-# image_generator
+# gerador-de-imagem
