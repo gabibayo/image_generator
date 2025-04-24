@@ -1,0 +1,91 @@
+body { 
+    background-color: pink;
+    color:blueviolet;
+    font-family: arial,helvetica,sans-serif;
+    
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+a{
+    color:blueviolet;
+    text-decoration: none; 
+}
+
+header{
+    color:blueviolet;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:x-large;
+    text-align: center;
+    
+}
+
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blueviolet;
+}
+img{
+    width: 375px;
+    height: 300px;
+    border-radius: 30%;
+
+}
+section{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blueviolet;
+
+}
+
+footer{
+    font-size: small;
+}
+
+.contato {
+    margin-top: 50px;
+}
+
+.contato input,
+.contato textarea,
+.contato button {
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    width: 80%;
+    max-width: 300px;
+}
+
+.loading,
+.resultado {
+  display: none;
+}
+
+#mostrar:checked ~ .loading,
+#mostrar:checked ~ .resultado {
+  display: block;
+}
+
+label[for="mostrar"] {
+  display: inline-block;
+  background-color: #7e57c2;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.resultado img {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }

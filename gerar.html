@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador</title>
+    <link rel="stylesheet" href="estilos/estilo.css">
+</head>
+<body>
+    <section>
+        <h2>Gerador de Imagens com IA</h2>
+        <p>Descreva abaixo a imagem que você gostaria de gerar:</p>
+      
+        <form>
+          <input type="text" name="descricao" placeholder="Ex: um gatinho fofo" required>
+        </form>
+      
+        
+        <label for="mostrar">Gerar Imagem</label>
+        <input type="checkbox" id="mostrar" hidden>
+      
+        <div class="loading">
+          <p>Gerando imagem, por favor aguarde...</p>
+        </div>
+      
+        <div class="resultado">
+          <h3>Imagem Gerada:</h3>
+          <img src="assets/gatinho.jpg" alt="Imagem gerada pela IA" />
+        </div>
+      </section>
+    
+</body>
+</html>

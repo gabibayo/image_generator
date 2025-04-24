@@ -1,0 +1,42 @@
+header{
+    color:blueviolet;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:x-large;
+    text-align: center;
+    
+}
+
+body { 
+    background-color: pink;
+    color:blueviolet;
+    font-family: arial,helvetica,sans-serif;
+}
+
+.galeria h1 {
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.galeria b {
+    font-size: x-large;
+}
+
+.fotos_container {
+    display: flex;    
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: 85dvh;
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    
+}
+
+.foto {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .3);
+    border-radius: 1rem;
+    width: 400px;
+    height: auto; 
+    object-fit: cover;
+}
