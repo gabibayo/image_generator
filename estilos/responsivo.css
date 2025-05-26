@@ -1,42 +1,60 @@
-header{
-    color:blueviolet;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size:x-large;
-    text-align: center;
-    
+:root {
+  --cor-fundo: rgb(230, 73, 112);
+  --cor-principal: rgb(238, 238, 238);
+  --fonte-padrao: Arial, Helvetica, sans-serif;
+  --fonte-header: Verdana, Geneva, Tahoma, sans-serif;
+  --fonte-titulo: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-body { 
-    background-color: pink;
-    color:blueviolet;
-    font-family: arial,helvetica,sans-serif;
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-principal);
+  font-family: var(--fonte-padrao);
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+header {
+  text-align: center;
+  font-family: var(--fonte-header);
+  font-size: 1.5rem;
+  color: var(--cor-principal);
+  margin-bottom: 2rem;
 }
 
 .galeria h1 {
-    font-size: medium;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1rem;
+  font-family: var(--fonte-titulo);
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 .galeria b {
-    font-size: x-large;
+  font-size: 1.5rem;
 }
 
 .fotos_container {
-    display: flex;    
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    height: 85dvh;
-    padding-block: 1rem;
-    padding-inline: 1rem;
-    
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 85dvh;
 }
 
 .foto {
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .3);
-    border-radius: 1rem;
-    width: 400px;
-    height: auto; 
-    object-fit: cover;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.foto:hover {
+  transform: scale(1.03);
 }
