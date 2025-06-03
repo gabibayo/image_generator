@@ -58,3 +58,16 @@ header {
 .foto:hover {
   transform: scale(1.03);
 }
+
+#Voltar{
+  background: #fd43cf;
+  width: 3rem;
+  height: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+#Voltar:hover{
+  padding: 15px;
+  background: #c930a3;
+}

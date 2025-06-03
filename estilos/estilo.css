@@ -21,7 +21,18 @@ body {
   line-height: 1.6;
   padding: 1rem;
 }
-
+#Voltar{
+  background: #fd43cf;
+  width: 3rem;
+  height: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+#Voltar:hover{
+  padding: 15px;
+  background: #c930a3;
+}
 a {
   color: var(--cor-principal);
   text-decoration: none;
@@ -121,3 +132,22 @@ label[for="mostrar"] {
   margin: 20px auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+.fotos_container{
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.fotos_container > img{
+  width: 30rem;
+  height: 20rem;
+  background-size: contain;
+  transition: 0.5s ease;
+  box-shadow: 5px 5px 8px #ebebeb;
+}
+
+.fotos_container > img:hover{
+  width: 40rem;
+  height: 21rem;
+}
+
